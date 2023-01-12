@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
+#include <unordered_set>
 
 using namespace std;
 
@@ -25,26 +26,31 @@ struct itemType {
 //Required functions:
 
 //Related Group 1
-void readFile(ifstream& inFile, vector<itemType>& items);
+void readFile(ifstream& inFile, vector<itemType>& items); //Sebastian
 
-bool openInputFile(ifstream& inFile);
+bool openInputFile(ifstream& inFile); //Miracle
 
-bool getQuotedString(string& line, int &index, string& subString);
+bool getQuotedString(string& line, int &index, string& subString); //Anthony
 
-//Related Group 2
+//Related Group 2 (Yu Peng)
 bool findIngredient(itemType item, string ingredient);
 
 int searchForIngredient(vector<itemType> items, string ingredient, bool printEnable);
 
 void printRecord(itemType& item);
 
-//Related group 3
+//Related group 3 (Charles)
 string makeStringUpper(string s);
 
 void sort(vector<itemType>& list);
 
+#include "yupeng.cpp"
+#include "charles.cpp"
+#include "miracle.cpp"
+#include "sebastian.cpp"
+#include "anthony.cpp"
 
-int main() {
+int main() { //Anthony
 	ifstream fin;
 	if (!openInputFile(fin)) return -1;
 	vector<itemType> items;
