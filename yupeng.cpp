@@ -40,4 +40,5 @@ void printRecord(itemType& item){
     } 
     numIngredient++;
   }
+  cout << endl;
 }

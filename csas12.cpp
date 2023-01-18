@@ -13,7 +13,7 @@ struct itemType {
 	int NDB_NO;
 	string Long_Name;
 	//string GDSN; //Useless
-	long GTIN_UPC;
+	double GTIN_UPC;
 	string Manufacturer;
 	//string Date_Modified; //Useless
 	//string Date_Available; //Useless
@@ -56,7 +56,6 @@ int main() { //Anthony
 	vector<itemType> items;
 	readFile(fin, items);
 	fin.close();
-	sort(items);
 	string line = "";
 	while (true) {
 		cout << "Enter ingredient: ";

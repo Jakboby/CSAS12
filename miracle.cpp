@@ -2,7 +2,7 @@ bool openInputFile(ifstream& inFile) {
   cout << "Input file name :";
   string filename;
   do {
-  cin >> filename;
+  getline(cin, filename);
   if(makeStringUpper(filename).compare("Q") == 0){
     return false;
   }
