@@ -29,12 +29,15 @@ void printRecord(itemType& item){
   cout << "Manufacturer: " << item.Manufacturer << endl;
   cout << "UPC:          " << item.GTIN_UPC << endl;
   cout << "Ingredients:  ";
-  for(auto itr = item.Ingredients.cbegin(); itr != item.Ingredients.cend(); itr++) {
-    cout << *itr;
-    if((itr + 1) != item.Ingredients.cend()){
+  int numIngredient = 1;
+  for(auto ingredient : item.Ingredients) {
+    cout << ingredient;
+    
+    if(numIngredient != item.Ingredients.size()) {
       cout << ", ";
     } else {
       cout << ".";
     } 
+    numIngredient++;
   }
 }

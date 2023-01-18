@@ -1,7 +1,7 @@
 bool getQuotedString(string& line, int &index, string& subString) {
 	subString = "";
 	index++;
-	while (line[index] != "\"") {
+	while (line[index] != '\"') {
 		subString += line[index];
 		index++;
 	}
