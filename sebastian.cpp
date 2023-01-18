@@ -12,7 +12,8 @@ while(line != ""){
   getQuotedString(line, index, sub);
   //Ignore
   getQuotedString(line, index, sub);
-  record.GTIN_UPC = strtod(sub.c_str(), NULL);
+  record.GTIN_UPC = atof(sub.c_str());
+  cout << record.GTIN_UPC << endl;
   getQuotedString(line, index, sub);
   record.Manufacturer = sub;
   getQuotedString(line, index, sub);

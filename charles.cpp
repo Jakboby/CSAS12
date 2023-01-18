@@ -10,14 +10,14 @@ string makeStringUpper(string s)
 
 void sort(vector<itemType>& list)
 {
-  long temp = 0;
-  for (int i = 0; i < list.size(); i++)
+  itemType temp;
+  for (int i = 0; i < list.size() - 1; i++)
     {
       if (list[i].GTIN_UPC > list[i + 1].GTIN_UPC)
       {
-        temp = list[i].GTIN_UPC;
-        list[i].GTIN_UPC = list[i+1].GTIN_UPC;
-        list[i+1].GTIN_UPC = temp;
+        temp = list[i];
+        list[i] = list[i+1];
+        list[i+1] = temp;
       }
     }
 }

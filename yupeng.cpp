@@ -16,8 +16,9 @@ int searchForIngredient(vector<itemType> items, string ingredient, bool printEna
   }
   if(printEnable){
     sort(foundList);
-    for(itemType i : foundList){
-      printRecord(i);
+    for(int i = 0; i < foundList.size(); i++){
+      printRecord(foundList[i]);
+      if (i != foundList.size() - 1) cout << SHORT_ASTERISK << endl;
     }
   }
   return foundList.size();
@@ -41,4 +42,5 @@ void printRecord(itemType& item){
     numIngredient++;
   }
   cout << endl;
+  
 }
