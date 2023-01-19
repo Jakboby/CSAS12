@@ -1,2 +1,2 @@
-"344604","","GDSN","72940755050","Red Gold","4/6/2018,4/26/2018","Tomatoes", "Tomato Juice, Less Than 2% Of: Salt, Dried Onion, Dried Garlic, Soybean Oil, Spices, Calcium Chloride, Natural Flavor, Olive Oil, Citric Acid."
-"344606","","GDSN","6.42206E+11","Cargill","8/5/2016","6/13/2016","White Turkey, Natural Flavoring"
+"344604","","GDSN","72940755050","Red Gold","4/6/2018","4/26/2018","Tomatoes,Tomato Juice,Dried Onion,Dried Garlic,Soybean Oil,Spices,Calcium Chloride,Natural Flavor,Olive Oil,Citric Acid"
+"344606","","GDSN","6.42206E+11","Cargill","8/5/2016","6/13/2016","White Turkey,Natural Flavor"
