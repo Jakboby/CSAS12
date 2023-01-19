@@ -1,10 +1,10 @@
-/*#include <iostream>
+#include <iostream>
 #include <fstream>
 #include <vector>
 #include <string>
 #include <unordered_set>
 
-using namespace std;*/
+using namespace std;
 
 const string LONG_ASTERISK =  "****************************************";
 const string SHORT_ASTERISK = "************************";
@@ -74,7 +74,7 @@ int main() { //Anthony
 		string show;
 		getline(cin, show);
 		show = makeStringUpper(show);
-		if (show == "Y") searchForIngredient(items, line, true);
+		if (show == "Y" && matches > 0) searchForIngredient(items, line, true);
 		
 		cout << LONG_ASTERISK << endl;
 		
